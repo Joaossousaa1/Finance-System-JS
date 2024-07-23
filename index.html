@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>Finance System</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <div class="inputs box">
+          Entradas: R$ <br /><span class="inputs-value">100.10</span>
+        </div>
+        <div class="outputs box">
+          Saídas: R$ <br /><span class="outputs-value">20.45</span>
+        </div>
+        <div class="amount box">
+          Total: R$ <br /><span class="amount">80.35</span>
+        </div>
+
+        <div class="input">
+          <label for="description">Descrição</label>
+          <input type="text" id="description" name="description" />
+        </div>
+        <div class="input">
+          <label for="value">Valor</label>
+          <input type="text" id="value" name="value" />
+        </div>
+        <div class="type">
+          <label for="type">Tipo</label>
+          <br />
+
+          <select name="type" id="type">
+            <option value="input">Entrada</option>
+            <option value="output">Saída</option>
+          </select>
+
+          <button class="send-btn">Incluir</button>
+        </div>
+      </section>
+
+      <section class="container2">
+        <div class="description-list block">
+          <strong>Descrição</strong>
+
+          <p>Salário</p>
+          <p>Aluguel</p>
+        </div>
+        <div class="value-list block">
+          <strong>Valor</strong>
+
+          <p>R$ 2000</p>
+          <p>R$ 2000</p>
+        </div>
+        <div class="type block">
+          <strong>Tipo</strong>
+
+          <p class="border">
+            <i class="fas fa-arrow-up"></i>
+
+            <button class="delete-btn">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </p>
+
+          <p class="border">
+            <i class="fas fa-arrow-down"></i>
+
+            <button class="delete-btn">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
