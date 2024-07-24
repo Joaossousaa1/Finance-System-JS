@@ -3,7 +3,14 @@
     {
       "id": 1,
       "name": "Freela",
-      "value": 150.20
+      "value": 150.20,
+      "type": "input"
+    },
+    {
+      "id": 2,
+      "name": "Academy",
+      "value": -65,
+      "type": "output"
     }
   ]
 }

@@ -3,14 +3,14 @@ import { createItemDescription } from "./createItemDescription.js";
 import { createItemValue } from "./createItemValue.js";
 import { createItemType } from "./createItemType.js";
 
-export function renderItems(id, title, value) {
-  const div = createItemContainer(id, title)
-  const item = createItemDescription(title)
-  const valueItem = createItemValue(value)
-  const type = createItemType(value)
+export function renderItems(item) {
+  const div = createItemContainer(item.id, item.name)
+  const name = createItemDescription(item.name)
+  const valueItem = createItemValue(item.value)
+  const type = createItemType(item.value)
 
   document.querySelector("#items").appendChild(div)
-  div.append(item, valueItem, type)
+  div.append(name, valueItem, type)
 
   return div
 }
